@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  min-height: 100vh;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+.input-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 2rem 2rem;
+}
+
+.title {
+  color: #333;
+  padding: 1.2rem 0;
+}
+
+.input-area {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid rgb(163, 163, 163);
+  padding: 12px 25px;
+  padding-right: 50px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.input:active {
+  border: 1px solid rgb(138, 136, 136);
+}
+
+.copy {
+  flex: 1;
+  padding: 12px;
+  font-size: 23px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid rgb(163, 163, 163);
+  outline: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.copy:hover {
+  opacity: 0.8;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid transparent;
+}
+
+.form-function {
+  margin-top: 20px;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.form-group:last-child {
+  border-bottom: none;
+}
+
+.form-group input[type="number"] {
+  width: 17%;
+  font-size: 15px;
+}
+
+.form-group input[type="checkbox"] {
+  width: 17%;
+  width: 20px;
+  height: 20px;
+}
+
+.form-group:last-of-type {
+  border-bottom: none;
+}
+
+.btn-submit {
+  display: inline-block;
+  width: 100%;
+  background: #222222;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 17px 0;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 3px;
+}
+
+.btn-submit span::after {
+  content: "\00bb";
+  position: absolute;
+  top: -6px;
+  right: -25px;
+  font-size: 28px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.btn-submit:hover span::after {
+  right: 0;
+  opacity: 1;
+}
+
+.btn-submit:hover {
+  background: rgb(51, 51, 51);
+}
+
+.btn-submit span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-submit:hover span {
+  padding-right: 25px;
+}
+
+.redirect-side {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.redirect-side:hover {
+  opacity: .8;
+  text-decoration: underline;
+}
+
+/* Mobile: width < 740px */
+@media (max-width: 46.1875em) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .input-wrapper {
+    width: 90%;
+  }
+}
